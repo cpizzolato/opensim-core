@@ -2,6 +2,8 @@
 file(GLOB TEST_PROGS "test*.cpp")
 file(GLOB TEST_FILES *.osim *.xml *.sto *.mot *.txt *.obj *.vtp)
 
+add_definitions(/DBASE_DIR="${CMAKE_CURRENT_LIST_DIR}")
+
 OpenSimAddTests(
     TESTPROGRAMS ${TEST_PROGS}
     DATAFILES ${TEST_FILES}
