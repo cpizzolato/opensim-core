@@ -194,6 +194,8 @@ MarkersReference::updateInternalWeights() const {
             _weights[ix++] = get_marker_weights()[wix].getWeight();
     }
 
+    //according to the previous comments, the list of marker weights
+    //should be in the same order as the list of marker names
     for (int i(0); i < _markerNames.size(); ++i) {
         std::cout << _markerNames[i] << ": " << _weights[i] << std::endl;
     }
