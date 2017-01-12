@@ -80,5 +80,5 @@ int main() {
     catch (OpenSim::Exception& e) {
         e.print(std::cout);
     }
-e     return 0;
+    return 0;
 }
